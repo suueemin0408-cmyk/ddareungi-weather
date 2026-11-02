@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/style.css"><title>따릉이 날씨 추천</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"></head><body>
+<nav><a href="index.html" class="on">🚲 지도</a><a href="analysis.html" id="n2">📊 분석</a><a href="detail.html" id="n3">⭐ 상세/설정</a></nav>
+<div class="wrap">
+ <div class="card weather" id="weather">불러오는 중...</div>
+ <div class="card"><div id="map"></div>
+  <p class="small"><span class="dot" style="background:#27ae60"></span>4대 이상 <span class="dot" style="background:#f39c12"></span>1~3대 <span class="dot" style="background:#e74c3c"></span>0대 · <span id="upd"></span></p></div>
+ <div class="card"><h3>📍 내 위치 기준 가까운 정류소</h3><table><thead><tr><th>정류소</th><th>거리</th><th>잔여</th><th>추천점수</th></tr></thead><tbody id="near"></tbody></table></div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/common.js"></script><script src="js/index.js"></script></body></html>
